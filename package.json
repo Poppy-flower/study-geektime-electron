@@ -1,7 +1,7 @@
 {
   "name": "study-geektime-electron",
   "version": "1.0.0",
-  "description": "这是学习极客时间的electron，跟着练习的demo",
+  "description": "这是学习极客时间的electron，跟着练习的demo-番茄钟demo",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
