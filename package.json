@@ -1,0 +1,25 @@
+{
+  "name": "study-geektime-electron",
+  "version": "1.0.0",
+  "description": "这是学习极客时间的electron，跟着练习的demo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poppy-flower/study-geektime-electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poppy-flower/study-geektime-electron/issues"
+  },
+  "homepage": "https://github.com/Poppy-flower/study-geektime-electron#readme",
+  "dependencies": {
+    "electron": "^10.1.1",
+    "progressbar.js": "^1.1.0",
+    "timer.js": "^1.0.4"
+  }
+}
