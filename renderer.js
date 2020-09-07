@@ -12,17 +12,17 @@ let progressBar = new ProgressBar.Circle('#timer-container', {
     svgStyle: null
 })
 
-let workTime = 1 * 5 // 1分钟工作，自行设定
-let restTime = 2 // 10秒休息
+let workTime = 1 * 60 // 1分钟工作，自行设定
+let restTime = 10 // 10秒休息
 let state = {}
 
 function render() {
     let {remainTime: s, type} = state
     let maxTime = type < 2 ? workTime: restTime
-    let ss = s % 60
-    let mm = ((s - ss)/ 60).toFixed()
-    progressBar.set(1- s/maxTime)
-    progressBar.setText(`${mm.toString().padStart(2, '0')}:${ss.toString().padStart(2, '0')}`)
+    let ss = s % 60  // 算完分钟的剩余秒数
+    let mm = ((s - ss)/ 60).toFixed()  // 分钟
+    progressBar.set(1- s/maxTime)  // 进度
+    progressBar.setText(`${mm.toString().padStart(2, '0')}:${ss.toString().padStart(2, '0')}`)  // 中间的文案
     if(type === 0) {
         switchButton.innerText = '开始工作'
     } else if(type === 1) {
